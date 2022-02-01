@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src ="my.js"></script>
+
+</head>
+<body>
+  <script>  
+    function myfun()
+    {
+      var a=document.getElementById('number').value;
+      var b=document.getElementById('numbers').value;
+      document.getElementById('result').innerHTML=(a*b);
+    }
+
+  </script>  
+  
+1st number:
+<input type="number" value="" id="number"><br><br>
+2nd number:
+<input type="number" value="" id="numbers"><br><br>
+<input type="submit" value="multiply" onclick= " myfun()">
+<input type="submit" value="divide" onclick=" myfun2()"><br><br>
+<b>The result is:</b>
+<span id="result"></span>
+</body>
+</html>
